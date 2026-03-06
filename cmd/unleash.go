@@ -27,18 +27,18 @@ import (
 	"github.com/spf13/cobra"
 	"github.com/spf13/pflag"
 
-	"github.com/go-gremlins/gremlins/internal/coverage"
-	"github.com/go-gremlins/gremlins/internal/diff"
-	"github.com/go-gremlins/gremlins/internal/engine"
-	"github.com/go-gremlins/gremlins/internal/engine/workdir"
-	"github.com/go-gremlins/gremlins/internal/exclusion"
-	"github.com/go-gremlins/gremlins/internal/log"
-	"github.com/go-gremlins/gremlins/internal/mutator"
-	"github.com/go-gremlins/gremlins/internal/report"
+	"github.com/kuczek/gremlins/internal/coverage"
+	"github.com/kuczek/gremlins/internal/diff"
+	"github.com/kuczek/gremlins/internal/engine"
+	"github.com/kuczek/gremlins/internal/engine/workdir"
+	"github.com/kuczek/gremlins/internal/exclusion"
+	"github.com/kuczek/gremlins/internal/log"
+	"github.com/kuczek/gremlins/internal/mutator"
+	"github.com/kuczek/gremlins/internal/report"
 
-	"github.com/go-gremlins/gremlins/cmd/internal/flags"
-	"github.com/go-gremlins/gremlins/internal/configuration"
-	"github.com/go-gremlins/gremlins/internal/gomodule"
+	"github.com/kuczek/gremlins/cmd/internal/flags"
+	"github.com/kuczek/gremlins/internal/configuration"
+	"github.com/kuczek/gremlins/internal/gomodule"
 )
 
 type unleashCmd struct {

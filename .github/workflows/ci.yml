@@ -2,7 +2,7 @@ name: CI
 
 on:
   push:
-    branches: [ 'main' ]
+    branches: ["main"]
   pull_request:
 
 jobs:
@@ -14,7 +14,7 @@ jobs:
       - name: Set up Go
         uses: actions/setup-go@v5
         with:
-          go-version-file: 'go.mod'
+          go-version-file: "go.mod"
       - name: Run lint
         uses: golangci/golangci-lint-action@v9
         with:
@@ -27,13 +27,13 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [ ubuntu-latest, macOS-latest, windows-latest ]
+        os: [ubuntu-latest, macOS-latest, windows-latest]
     steps:
       - uses: actions/checkout@v4
       - name: Set up Go
         uses: actions/setup-go@v5
         with:
-          go-version-file: 'go.mod'
+          go-version-file: "go.mod"
       - name: Run tests with coverage
         run: make cover
       - name: Report coverage to CodeCov
@@ -50,7 +50,7 @@ jobs:
         env:
           CC_TEST_REPORTER_ID: ${{secrets.CC_TEST_REPORTER_ID}}
         with:
-          prefix: github.com/go-gremlins/gremlins
+          prefix: github.com/kuczek/gremlins
           coverageLocations: |
             ${{github.workspace}}/coverage.out:gocov
       - name: Report coverage to Codacy

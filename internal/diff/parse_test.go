@@ -7,7 +7,7 @@ import (
 
 	"github.com/spf13/viper"
 
-	"github.com/go-gremlins/gremlins/internal/configuration"
+	"github.com/kuczek/gremlins/internal/configuration"
 )
 
 func TestNewWithCmd(t *testing.T) {

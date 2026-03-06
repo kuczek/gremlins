@@ -24,12 +24,12 @@ import (
 	"testing"
 	"testing/fstest"
 
-	"github.com/go-gremlins/gremlins/internal/configuration"
-	"github.com/go-gremlins/gremlins/internal/coverage"
-	"github.com/go-gremlins/gremlins/internal/diff"
-	"github.com/go-gremlins/gremlins/internal/engine"
-	"github.com/go-gremlins/gremlins/internal/gomodule"
-	"github.com/go-gremlins/gremlins/internal/mutator"
+	"github.com/kuczek/gremlins/internal/configuration"
+	"github.com/kuczek/gremlins/internal/coverage"
+	"github.com/kuczek/gremlins/internal/diff"
+	"github.com/kuczek/gremlins/internal/engine"
+	"github.com/kuczek/gremlins/internal/gomodule"
+	"github.com/kuczek/gremlins/internal/mutator"
 )
 
 const (
